@@ -4,19 +4,16 @@
     box-sizing: border-box;
 }
 
-/* .enlaces{
+.enlaces{
     display: inline-block;
     text-decoration: none;
     background: crimson;
     color: white;
     padding: 30px 20px;
 }
-.block{
-    display: none;
-    opacity: 0;
-} */
 
 
+/* 
 .header{
     height: 400px;
     background: crimson;
@@ -37,14 +34,14 @@
 1    - Elemento
 */
 
-.title{
+/* .title{
     font-size: 25px;
     border: inherit;
     padding: inherit;
     text-align: initial;
     color: initial;
     font-family: initial;
-}
+} */ */
 
 
 
