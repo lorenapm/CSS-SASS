@@ -1,5 +1,41 @@
+/* * {
+  text-decoration: underline;
+} */
 
-h2{
+.borde {
+  border: 2px solid black;
+}
+
+#section {
+  border: 1px solid red;
+}
+[href] {
+  text-decoration: none;
+}
+.titulo {
+  text-align: center;
+}
+.😁 {
+  color: darkblue;
+}
+
+[href="https://alexcgdesign.com/inicio"]
+{
+  color: red;
+}
+
+[href^="hsttps"] {
+  color: salmon;
+}
+
+[href$="org"] {
+  background: seagreen;
+}
+
+[href*="alexcgdesign"] {
+  background-color: tan;
+}
+/* h2{
     color: steelblue;
 }
 
@@ -43,4 +79,4 @@ h2{
 
 [href*="alexcgdesign"]{
     background: darksalmon;
-}
+} */
