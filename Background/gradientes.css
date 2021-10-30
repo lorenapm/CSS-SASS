@@ -1,36 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
-    width: 80%;
-    height: 400px;
-    margin: 30px auto;
-    background: steelblue;
-    /* background-image:linear-gradient(direction, color stop, color stop); */
+.container {
+  width: 80%;
+  height: 400px;
+  margin: 30px auto;
+  background: steelblue;
+  background-image: linear-gradient(red, pink);
+  /* background-image:linear-gradient(direction, color stop, color stop); */
 
-    background-image: 
-    linear-gradient( crimson 30%, steelblue 80%);
+  /* background-image: 
+    linear-gradient( crimson 30%, steelblue 80%); */
 }
 
-.header{
-    padding: 0.1px;
-    height: 650px;
-    background-image:linear-gradient(#00008b7e, #4683b481), url(img/hero.jpg);
-    background-image: linear-gradient(120deg, #a6c0fe7e 0%, #f680848f 100%), url(img/hero.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.header {
+  /*para evitar colapso de margenes con el title*/
+  padding: 0.1px;
+  height: 650px;
+  /* background-image: linear-gradient(
+      rgba(0, 0, 139, 0.502),
+      hsla(207, 44%, 49%, 0.529)
+    ),
+    url(img/hero.jpg); */
+  background-image: linear-gradient(to top, #a18cd17e 0%, #fbc2eb79 100%),
+    url(img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-image: linear-gradient(120deg, #a6c0fe7e 0%, #f680848f 100%),
+    url(img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    background-image: linear-gradient(to bottom, #ec2F4B, #009FFF);
+  background-image: linear-gradient(to bottom, #ec2f4b, #009fff); */
 }
 
-.title{
-    font-size: 60px;
-    text-align: center;
-    margin-top: 270px;
-    color: #fff;
-    font-family: 'Arial';
+.title {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 270px;
+  color: #fff;
+  font-family: "Arial";
 }
