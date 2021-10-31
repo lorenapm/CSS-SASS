@@ -19,7 +19,6 @@ body {
 }
 
 .card__title {
-  border-bottom: 3px solid salmon;
   padding-bottom: 7px;
   margin-bottom: 10px;
   /* text-align: center; */
@@ -30,17 +29,17 @@ body {
   color: #fff;
 }
 
-p::first-line {
+/* p::first-line {
   color: crimson;
   font-weight: bold;
   font-size: 2rem;
-}
+} */
 
-.card__title::first-letter {
+/* .card__title::first-letter {
   font-size: 2rem;
   line-height: 3rem;
   letter-spacing: 20px;
-}
+} */
 
 input[type="text"] {
   margin-left: 20px;
@@ -52,9 +51,9 @@ input[type="text"] {
   outline: none;
 }
 
-input[type="text"]::placeholder {
+/* input[type="text"]::placeholder {
   color: #fff;
-}
+} */
 
 /* 
 <element>
@@ -63,24 +62,23 @@ input[type="text"]::placeholder {
     ::after
 </element>
 */
-
-/* .card__text::before{
-    content: "Hola ";
+.card__text::before {
+  content: "Hola ";
 }
 
-.card__text::after{
-    content: " Alexander";
-} */
+.card__text::after {
+  content: " Alexander";
+}
 
-/* .card__title::before,
-.card__title::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    padding: 2px;
-    background:salmon;
-} */
+.card__title::before,
+.card__title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  padding: 2px;
+  background: salmon;
+}
 
 ul {
   counter-reset: contador;
@@ -91,17 +89,17 @@ li {
   padding: 0;
   margin-bottom: 10px;
 }
-/* 
-li::before{
-    content:  counter(contador);
-    counter-increment: contador;
-    background: salmon;
-    width: 30px;
-    height: 30px;
-    color: #fff;
-    display: inline-block;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    margin-right: 4px;
-} */
+
+li::before {
+  content: counter(contador);
+  counter-increment: contador;
+  background: salmon;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
