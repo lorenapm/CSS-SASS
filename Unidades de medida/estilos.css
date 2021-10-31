@@ -8,7 +8,7 @@ body {
   font-family: Arial;
   background: #f2f2f2;
   font-size: 20px;
-  height: 200px;
+  height: 600px;
 }
 
 .opinion {
@@ -39,17 +39,17 @@ viewport height vh
   max-height: 400px;
   min-width: 200px;
   min-height: 200px; */
-  width: 300px;
-  height: 300px;
+  width: 70%;
+  height: 80%;
 
   background: steelblue;
-  /* width: 100vw; */
-  /* height: 100vh; */
+  width: 100vw;
+  height: 100vh;
   margin: 30px auto;
 }
 
-.children {
-  width: 80%;
+/* .children {
+  width: 100%;
   height: 50%;
   background: crimson;
-}
+} */
