@@ -1,49 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    width: 90%;
-    margin: 0 auto;
+body {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.box{
-    display: block;
-    background: steelblue;
-    width: 55px;
-    height: 55px;
-    margin: 10px 0;
-    margin-left: 5px;
-    text-align: center;
-    line-height: 55px;
-    color: #fff;
-    font-weight: bold;
+.box {
+  background: steelblue;
+  width: 55px;
+  height: 55px;
+  margin: 10px 0;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 55px;
+  color: #fff;
+  font-weight: bold;
 }
 
-.container{
-    margin-left: -5px;
-    padding: 10px 0;
-    border: 3px solid lightcoral;
+.container {
+  margin-left: -5px;
+  padding: 10px 0;
+  border: 3px solid lightcoral;
 }
 
 /* Por su tipo */
 
-/* .box:only-of-type{
-    background: tomato;
+/* .box:only-of-type {
+  background: tomato;
 } */
 
-/* .box:first-of-type{
-    background: tomato;
+/* .box:first-of-type {
+  background: tomato;
 } */
 
-/* .box:last-of-type{
-    background: tomato;
+/* .box:last-of-type {
+  background: tomato;
 } */
 
-/* .box:nth-of-type(2n+1){
-    background: tomato;
+/* .box:nth-of-type(2n + 1) {
+  background: tomato;
 } */
 
 /* 
@@ -55,9 +54,9 @@ body{
 
 */
 
-/* .box:nth-last-of-type(odd){
-    background: tomato;
-} */
+.box:nth-last-of-type(2) {
+  background: tomato;
+}
 
 /* .container :only-child{
     background: tomato;
@@ -79,6 +78,6 @@ body{
     background: crimson;
 } */
 
-.container :nth-last-child(1){
-    background: crimson;
-}
+/* .container :nth-last-child(1) {
+  background: crimson;
+} */
