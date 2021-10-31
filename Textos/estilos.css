@@ -13,9 +13,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* .card {
-  background-image: linear-gradient(#2a265fb6, #2a265fb4), url(background.jpg);
-
+.card {
+  background-image: linear-gradient(#2a265fba, #2a265fba), url(background.jpg);
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -24,34 +23,34 @@ body {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-} */
+}
 
-/* .title {
+.title {
   font-size: 30px;
   border-bottom: 3px solid #fff;
   padding: 7px;
   margin-bottom: 30px;
-} */
+}
 
-/* .text {
+.text {
   font-weight: 300;
   margin-bottom: 15px;
   line-height: 2;
   text-transform: capitalize;
-} */
+}
 
-/* .bold {
+.bold {
   font-weight: bold;
-} */
+}
 
-/* .cta {
+.cta {
   display: inline-block;
   color: white;
   text-decoration: none;
   border: 1px solid #fff;
   padding: 15px 25px;
   border-radius: 3px;
-} */
+}
 
 .container {
   background: #fff;
@@ -83,12 +82,12 @@ body {
   /* font-variant: small-caps; */
 }
 
-.bold {
+/* .bold {
   color: crimson;
   font-weight: bold;
   font-style: italic;
   font-size: 20px;
-}
+} */
 
 .img {
   /*hereda del padre container el text align center y centra la imagen*/
