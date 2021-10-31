@@ -54,30 +54,30 @@ body {
 
 */
 
-.box:nth-last-of-type(2) {
+/* .box:nth-last-of-type(2) {
   background: tomato;
-}
-
-/* .container :only-child{
-    background: tomato;
 } */
 
-/* .box:first-child{
-    background: tomato;
+/* .box:only-child {
+  background: tomato;
 } */
 
-/* div:last-child{
-    background: crimson;
+/* .box:first-child {
+  background: tomato;
 } */
-
-/* .container :nth-child(1){
-    background: crimson;
-} */
-
-/* body :nth-child(1){
-    background: crimson;
-} */
-
-/* .container :nth-last-child(1) {
+/* 
+div:last-child {
   background: crimson;
 } */
+
+/* .container :nth-child(1) {
+  background: crimson;
+} */
+
+/* body :nth-child(1) {
+  background: crimson;
+} */
+
+.container :nth-last-child(1) {
+  background: crimson;
+}
