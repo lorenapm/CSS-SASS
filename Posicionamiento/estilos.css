@@ -28,3 +28,13 @@ body {
   font-weight: bold;
   line-height: 100px;
 }
+.static {
+  position: static;
+}
+.relative {
+  background: tomato;
+  position: relative;
+  top: 100px;
+  left: 50%;
+  right: 2rem;
+}
