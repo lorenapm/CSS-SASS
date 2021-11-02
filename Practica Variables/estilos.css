@@ -72,3 +72,28 @@ body {
 .form__submit:hover {
   background-image: var(--gradient1);
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    background-repeat: no-repeat;
+    padding: 60px;
+  }
+  .form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    padding: 40px 0;
+  }
+  .form {
+    width: 90%;
+  }
+  .form__title {
+    font-size: 1.5rem;
+  }
+  .form__submit {
+    font-size: 1rem;
+  }
+} ;
