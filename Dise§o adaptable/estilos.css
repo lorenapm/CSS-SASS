@@ -13,23 +13,53 @@
   text-align: center;
   font-family: monospace;
 }
+
+@media screen and (min-width: 700px) {
+  body {
+    background: crimson;
+  }
+}
+
+/* La "," es como se declara un "or" en CSS */
+/* @media screen and (max-width: 400px), (min-width: 900px) {
+  .title {
+    background: black;
+    color: white;
+  }
+} */
+
+/* @media screen and (orientation: portrait) and (max-width: 600px) {
+  .title {
+    text-align: left;
+  }
+} */
+
 /* @media <media-type> and (expression) {
     se ejecutará cuando se cumpla la condición de expression;
 } */
 
-@media print {
+/* orientation: landscape (cuando el width es mayor que el higth) */
+/* @media screen and (orientation: landscape) {
+  .title {
+    color: steelblue;
+    background: black;
+    height: 100vh;
+  }
+} */
+
+/* @media print {
   .title {
     color: steelblue;
     font-size: 5rem;
     text-align: right;
     font-family: cursive;
   }
-}
+} */
 
 /* pantallas: ambas condiciones obligadorias con el "and" */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .title {
     background: black;
     color: white;
   }
-}
+} */
