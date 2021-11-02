@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 3rem;
+  background: none;
+  color: crimson;
+  border-bottom: none;
+  margin: 40px 0;
+  text-align: center;
+  font-family: monospace;
+}
+/* @media <media-type> and (expression) {
+    se ejecutará cuando se cumpla la condición de expression;
+} */
+
+@media print {
+  .title {
+    color: steelblue;
+    font-size: 5rem;
+    text-align: right;
+    font-family: cursive;
+  }
+}
+
+/* pantallas: ambas condiciones obligadorias con el "and" */
+@media screen and (max-width: 600px) {
+  .title {
+    background: black;
+    color: white;
+  }
+}
