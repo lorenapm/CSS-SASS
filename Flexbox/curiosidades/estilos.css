@@ -13,7 +13,7 @@ body {
   padding: 20px;
   display: inline-flex;
   background: steelblue;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .link {
@@ -26,19 +26,20 @@ body {
 
 .container {
   width: 90%;
-  height: 300px;
+
   margin: 30px auto;
   display: flex;
   padding: 20px;
   border: 3px solid #000;
   gap: 10px;
-  flex-direction: row;
+  -ms-flex-direction: row;
 }
 
 .item {
   background: crimson;
   color: #fff;
   font-size: 2rem;
+  line-height: 200px;
   text-align: center;
   flex-basis: 50%;
 }
@@ -46,6 +47,9 @@ body {
 .figure {
   flex-basis: 50%;
   height: 100%;
+  /* background-image: url(img.jpg);
+  background-position: center;
+  background-size: cover;*/
 }
 
 .img {
