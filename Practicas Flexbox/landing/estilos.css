@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 
+:root {
+  --height-nav: 70px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,4 +18,59 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.nav {
+  background: #143d64;
+  height: var(--height-nav);
+  color: white;
+}
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__link {
+  color: white;
+  text-decoration: none;
+  margin-left: 1em;
+}
+.hero__main {
+  display: flex;
+  height: calc(100vh - var(--height-nav));
+  align-items: center;
+  min-height: 600px;
+}
+/* flex:1 a hero__texts y hero_p para que reparta equitativamente el espacio */
+.hero__texts {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.hero_paragraph {
+  flex: 1;
+}
+
+.hero__img {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+.hero__title {
+  font-size: 3rem;
+}
+.hero_paragraph {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.cta {
+  background: #6e63ff;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 6px;
+  margin-top: 1.5em;
 }
