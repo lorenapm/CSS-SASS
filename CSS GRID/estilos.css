@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial";
+}
+
+.grid {
+  max-width: 700px;
+  width: 90%;
+  height: 500px;
+  margin: 20px auto;
+  outline: 3px solid #000;
+  display: grid;
+  /* grid-template-columns: 30% 30% 30%; */
+  /* grid-template-columns: repeat(2, 200px 50px); */
+  /* grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr); */
+  /* grid-template-columns: 1fr 1fr 1fr auto; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  /*Gutters espaciadore */
+  /* row-gap: 20px;
+  column-gap: 20px; */
+  /*short hand: si le pongo 1 solo valor aplica el mismo tanto a filas como columnas */
+  /* gap: 20px 30px; */
+  gap: 10px;
+}
+
+.grid__item {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.grid :nth-child(1) {
+  background: crimson;
+  /* grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5; */
+  /* grid-column: 2/4;
+  grid-row: 3/5; */
+}
+
+.grid :nth-child(2) {
+  background: darkmagenta;
+}
+
+.grid :nth-child(3) {
+  background: steelblue;
+  /* grid-column: span 2;
+  grid-row: span 3; */
+  /* grid-column: 2 / span 3;
+  grid-row: 1 / span 3; */
+  /* grid-column: 3 / -1;
+  grid-row: 2 / -1; */
+  grid-area: 2/3/5/5;
+}
+
+.grid :nth-child(4) {
+  background: brown;
+}
+.grid :nth-child(5) {
+  background: chocolate;
+}
+.grid :nth-child(6) {
+  background: midnightblue;
+}
