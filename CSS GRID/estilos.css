@@ -20,7 +20,7 @@ body {
   /* grid-template-columns: 2fr 1fr 1fr;
   grid-template-columns: repeat(6, 1fr); */
   /* grid-template-columns: 1fr 1fr 1fr auto; */
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
 
   /*Gutters espaciadore */
@@ -29,6 +29,13 @@ body {
   /*short hand: si le pongo 1 solo valor aplica el mismo tanto a filas como columnas */
   /* gap: 20px 30px; */
   gap: 10px;
+
+  /* flujo grid-auto-flow: ;: por defecto row (der-izq); column(arriba-abajo conteo). grid-auto-colums defino el tamaño de las columnas que crea por defecto (idem row) */
+  /* grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr; */
+
+  /* grid-auto-flow: dense; */
 }
 
 .grid__item {
@@ -50,6 +57,7 @@ body {
 
 .grid :nth-child(2) {
   background: darkmagenta;
+  grid-row: span 2;
 }
 
 .grid :nth-child(3) {
@@ -60,15 +68,22 @@ body {
   grid-row: 1 / span 3; */
   /* grid-column: 3 / -1;
   grid-row: 2 / -1; */
-  grid-area: 2/3/5/5;
+  /* grid-area: 2/3/5/5; */
 }
 
 .grid :nth-child(4) {
   background: brown;
+  grid-column: span 2;
 }
 .grid :nth-child(5) {
   background: chocolate;
 }
 .grid :nth-child(6) {
   background: midnightblue;
+}
+.grid :nth-child(7) {
+  background: red;
+}
+.grid :nth-child(8) {
+  background: red;
 }
