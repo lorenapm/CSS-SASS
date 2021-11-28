@@ -30,7 +30,15 @@
 
   /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
 
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: (2, 1fr);
+  /* justify-items: start|end|stretchcenter; 
+  align-items: justify-items: start|end|stretchcenter */
+  /* place-items: align-items/justify-items; */
+  /* place-items: start stretch; */
+  place-items: center;
 }
 
 .grid__item {
