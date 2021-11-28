@@ -6,7 +6,7 @@
 
 .grid {
   width: 90%;
-  max-width: 600px;
+  /* max-width: 600px; */
   height: 600px;
   margin: 30px auto;
   outline: 3px solid #000;
@@ -21,8 +21,16 @@
     "main main main sidebar"
     "footer footer footer footer"; */
 
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /*PARA CREAR COLUMNAS DINÁMICAS CON MIN-CONTENT, MAX-CONTENT AND FIT-CONTENT*/
+  /*min-content: tamaño mínimo posible - el de la palabra más larga; max-content: todo el contenido e la frase en una sola línea.*/
+  /* grid-template-columns: min-content max-content; */
+
+  /* fit-content: min-content al inicio tamaño de min-content hasta que sobrepases el tamaño que defino, entonces se desborda en segunda línea. */
+  /* grid-template-columns: fit-content(400px); */
+
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .grid__item {
