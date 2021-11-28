@@ -32,26 +32,30 @@
 
   /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
 
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: (2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   /* justify-items: start|end|stretchcenter; 
   align-items: justify-items: start|end|stretchcenter */
   /* place-items: align-items/justify-items; */
   /* place-items: start stretch; */
-  place-items: center;
+  /* place-items: center; */
 }
 
 .grid__item {
   padding: 20px 0;
   font-size: 2rem;
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .grid :nth-child(1) {
   background: slateblue;
   /* grid-column: header-start / header-end;
   grid-row: header-start / header-end; */
+  /* order: 1; */
+  align-self: center;
+  justify-self: end;
+  place-self: start end;
 }
 
 .grid :nth-child(2) {
