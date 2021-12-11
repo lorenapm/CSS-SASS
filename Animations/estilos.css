@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.cuadrado {
+  width: 400px;
+  height: 400px;
+  background: steelblue;
+  margin: 40px auto;
+  overflow: hidden;
+  animation: animations 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  /* direction con alternate evitamos que haga un salto, ya que aplica la animación de ida y vuelta: normal | reverse | alternate | alternate-reverse*/
+  animation-direction: alternate;
+  /* fill mode cómo queremos que queden los estilos tras la animación, con forwards se aplican los últimos estilos de la animación del 100%, no vuelve a los originales: backwars | nomal | forwars | both*/
+  animation-fill-mode: forwards;
+  /* delay retardo en que se produzca la animacion*/
+  animation-delay: 2s;
+  /* play-state permite parar y reanudar la animación, por defecto es running. Paused útil para que se pause cuando no paso el mouse y se active con el mouse: runnig | paused*/
+  animation-play-state: paused;
+}
+
+.cuadrado:hover {
+  animation-play-state: running;
+}
+
+@keyframes animations {
+  to {
+    transform: scale(0.5);
+  }
+  from {
+    transform: scale(1);
+  }
+}
+.spiderman {
+  width: 200px;
+  margin: 0 auto;
+  /* OJO sin el display block no puedo centrar la imagen*/
+  display: block;
+  animation: moveSpiderman 3s infinite;
+}
+/* @keyframes moveSpiderman {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+} */
+/* @keyframes moveSpiderman {
+  0% {
+    transform: translateY(-50px);
+  }
+  30% {
+    transform: translateY(0) rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+} */
