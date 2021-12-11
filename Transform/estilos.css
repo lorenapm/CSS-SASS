@@ -25,10 +25,10 @@ body {
   /* transform: translateX(300px); */
   /* 100% se refiere al 100% del tamaño del elemento
   transform: translateY(100%); */
-  transform: translate(100%, 50px);
+  /* transform: translate(100%, 50px); */
 
-  /* transition: 3s all; */
-  /* transform:rotate(.6turn);  */
+  /* transition: 3s all;
+  transform: rotate(0.6turn); */
 
   /* 
         grados:   0-360 deg
@@ -37,10 +37,11 @@ body {
         turn:     0-1  turn
     */
 
-  /* transform: scale(2,1); */
-  /* transform:skew(10deg, 10deg); */
+  /* transform: scale(2, 1); */
+  /* no es recomendable usaer así el skew: 
+  transform: skew(10deg, 10deg); */
 
-  /* transform:rotate(5deg); */
+  /* transform: rotate(5deg); */
 }
 
 .fixed {
